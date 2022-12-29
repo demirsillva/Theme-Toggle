@@ -1,3 +1,8 @@
+:root{
+    --background: #f0f8ff;
+    --background-dark: #1f1f1f;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +10,11 @@
 }
 
 body{
-    background-color: aliceblue;
+    background-color: var(--background);
     display: flex;
     align-items: center;
     justify-content: center;
+    
     min-height: 100vh;
     margin: 0;
 
@@ -16,8 +22,8 @@ body{
 }
 
 body.dark{
-    background-color: #1f1f1f;
-}
+    background-color: var(--background-dark);
+} 
 
 .checkbox{
     position: absolute;
